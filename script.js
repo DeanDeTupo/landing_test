@@ -1,3 +1,4 @@
+// это для калькулятара
 const numbers = document.querySelectorAll('.number'),
       operators = document.querySelectorAll('.operator'),
       clear = document.querySelector('.clear'),
@@ -6,8 +7,17 @@ const numbers = document.querySelectorAll('.number'),
       result = document.querySelector('.result'),
       plusminus = document.querySelector('.plusminus'),
       comma = document.querySelector('.comma')
-      
-// вешаем обработчики 
+
+// это для остального мусора пока
+const header = document.querySelector('#landing-text')
+
+document.addEventListener('scroll', () => {
+    let value = window.scrollY
+
+    header.style.marginTop = value*1.5 + 'px'
+})
+
+// вешаем обработчики Калькулятор
 Array.from(numbers).forEach((el) => {
     el.addEventListener('click', number)
 })
@@ -20,6 +30,8 @@ evalBtn.addEventListener('click', evaluate)
 clear.addEventListener('click', clearAll)
 plusminus.addEventListener('click', operator),
 comma.addEventListener('click', commaBtn)
+
+
 
         
 // здесь начнём выполнение вычислений
