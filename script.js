@@ -11,12 +11,39 @@ const numbers = document.querySelectorAll('.number'),
 // это для остального мусора пока
 const header = document.querySelector('#landing-text')
 
+// кнопки в header
+const logo = document.querySelector('.logo')
+const aboutMe =document.querySelector('#aboutMe')
+const menu_2 =document.querySelector('#menu-item-2')
+const menu_3 =document.querySelector('#menu-item-3')
+const menu_4 =document.querySelector('#menu-item-4')
+
+// скролл H1
 document.addEventListener('scroll', () => {
     let value = window.scrollY
 
-    header.style.marginTop = value*1.5 + 'px'
+    header.style.marginTop = value*1.1 + 'px'
 })
 
+// Якоря
+logo.addEventListener('click', () => {
+    window.scrollTo({behavior: 'smooth',
+                     top: 0,
+                     left: 0})
+})
+
+aboutMe.addEventListener('click', () => {
+    document.querySelector('.about-question').scrollIntoView({behavior: 'smooth'})
+})
+menu_2.addEventListener('click', () => {
+    document.querySelector('.coding').scrollIntoView({behavior: 'smooth'})
+})
+menu_3.addEventListener('click', () => {
+    document.querySelector('.gayming').scrollIntoView({behavior: 'smooth'})
+})
+menu_4.addEventListener('click', () => {
+    document.querySelector('.travel').scrollIntoView({behavior: 'smooth'})
+})
 // вешаем обработчики Калькулятор
 Array.from(numbers).forEach((el) => {
     el.addEventListener('click', number)
