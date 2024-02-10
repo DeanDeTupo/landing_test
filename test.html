@@ -10,26 +10,50 @@
     <header>
         <nav>
           <ul class="menu">
-            <li class="logo menu-item logo">&andand;</li>
+            <div class="logo">&andand;</div>
             <li class="menu-item" id="aboutMe">Главная</li>
             <li class="menu-item" id="menu-item-2">Услуги</li>
             <li class="menu-item" id="menu-item-3">Контакты</li>
             <li class="menu-item" id="menu-item-4">О нас</li>
-            <li class="menu-item" id="calc">
-              <div class="calc-img">
-                <div class="calc-sign plus"><p>+</p></div>
-                <div class="calc-sign minus"><p>-</p></div>
-                <div class="calc-sign mul"><p>&#215;</p></div>
-                <div class="calc-sign equal"><p>=</p></div>
+            <li class="menu-item calc" id="calc">
+              <div>
+                <div class="calc-img">
+                  <div class="calc-sign plus"><p>+</p></div>
+                  <div class="calc-sign minus"><p>-</p></div>
+                  <div class="calc-sign mul"><p>&#215;</p></div>
+                  <div class="calc-sign equal"><p>=</p></div>
+                </div>
               </div>
             </li>
+            <div class="burg-menu">
+              <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
           </ul>
         </nav>
     </header>
+    <div class="drop-menu">
+      <div class="menu-item drop" id="aboutMe">Главная</div>
+      <div class="menu-item drop" id="menu-item-2">Услуги</div>
+      <div class="menu-item drop" id="menu-item-3">Контакты</div>
+      <div class="menu-item drop" id="menu-item-4">О нас</div>
+      <div class="menu-item drop calc" id="calc">
+        <div class="calc-img">
+          <div class="calc-sign plus"><p>+</p></div>
+          <div class="calc-sign minus"><p>-</p></div>
+          <div class="calc-sign mul"><p>&#215;</p></div>
+          <div class="calc-sign equal"><p>=</p></div>
+        </div>
+      </div>
+    </div>
+   
     
     <section class="parallax">
       <div class="start">
-        <h1 id="landing-text"> Простенький лендинг о себе</h1>
+        <h1 id="landing-text"> <em>Простенький</em> лендинг о себе</h1>
       </div>
       <a href="https://t.me/dentupo" target="_blank">
         <button class="hire" type="button">Связаться со мной</button>
@@ -40,68 +64,122 @@
       
       <div class="about-question">Обо мне</div>
       
-      <div class="page">
-        <div class="section">
-          <div class="section-header">Я Дэн Тупо</div>
+      <section class="page">
+        <!-- <div class="section-header">Я Дэн </div> -->
+        <div class="section about">
           <div class="section-content">
             <img src="./src/img/me.jpg" alt="me" id="my_avatar">
             <div class="section-content-text-block">
-              <div class="text-box">что то</div>
-              <div class="text-box">что то</div>
-              <div class="text-box">что то</div>
+              <div class="text-box">
+                <h4>Здравствуй, дорогой друг, я - Дэн!</h4>
+                <p>Весёлый человек, люблю готовить, читать книги,  учиться новому, спорт, а ещё котят и бабушку</p>
+                <p>Работаю видеомонтажёром. До этого занимался 3d моделированием и инженирингом</p>
+              </div>
+
             </div>
           </div>
         </div>
-      </div>
-      <div class="coding spage">
-        <div class="section">
-          <div class="section-header">Я чутка программирую, совсем чуть чуть</div>
-          <div class="section-content">
-            <img src="./src/img/me.jpg" alt="me" id="my_avatar">
-            <div class="section-content-text-block">
-              <div class="text-box">что то</div>
-              <div class="text-box">что то</div>
-              <div class="text-box">что то</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gayming spage">
-        <div class="section">
-          <div class="section-header">Иногда играю в игры на компухтере</div>
-          <div class="section-content">
-            <img src="./src/img/me.jpg" alt="me" id="my_avatar">
-            <div class="section-content-text-block">
-              <div class="text-box">что то</div>
-              <div class="text-box">что то</div>
-              <div class="text-box">что то</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="travel spage">
-        <div class="section">
-          <div class="section-header">Люблю ездить по стране</div>
-          <div class="section-content">
-            <img src="./src/img/me.jpg" alt="me" id="my_avatar">
-            <div class="section-content-text-block">
-              <div class="text-box">что то</div>
-              <div class="text-box">что то</div>
-              <div class="text-box">что то</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
 
 
+      <section class="goals spage">
+        <div class="section-header">Мои цели изучения FrontEnd разработки</div>
+        <ul class="goals-list">
+          <li class="goal">
+            <h4>Сменить сферу деятельности</h4>
+            <p>Сюда какая то хуйня уже лорем ипсум блять</p>
+          </li>
+          <li class="goal">
+            <h4>Создавать что-то новое</h4>
+            <p>Сюда какая то хуйня уже лорем ипсум блять</p>
+          </li>
+          <li class="goal">
+            <h4>Познать как работает интернет на глубоком уровне</h4>
+            <p>Сюда какая то хуйня уже лорем ипсум блять</p>
+          </li>
+          <li class="goal">
+            <h4>Стать профессионалом</h4>
+            <p>Сюда какая то хуйня уже лорем ипсум блять</p>
+          </li>
+          <li class="goal">
+            <h4> Расширить и изменить круг общения</h4>
+            <p>Сюда какая то хуйня уже лорем ипсум блять</p>
+          </li>
+        </ul>
 
-      <!-- <div class="grid-container">
-        <div class="box topbar">Заголовок</div>
-        <div class="box side">Боковуха</div>
-        <div class="box middle"><p>Красный</p></div>
-        <div class="box rside">Справа хуйня</div>
-        <div class="box footer">Плинтус</div>
-      </div> -->
+        <div class="section-header">Задачи</div>
+        <ul class="goals-list to-do">
+          <li class="goal">
+            <h4>Учить React</h4>
+            <p>Сюда какая то хуйня уже лорем ипсум блять</p>
+          </li>
+          <li class="goal">
+            <h4>Изучение вёрстки html и css</h4>
+            <p>Сюда какая то хуйня уже лорем ипсум блять</p>
+          </li>
+          <li class="goal">
+            <h4>Изучение java-script, Node.js, алгоритмов</h4>
+            <p>Сюда какая то хуйня уже лорем ипсум блять</p>
+          </li>
+          <li class="goal">
+            <h4>Коммуникация с действующими web-разработчиками</h4>
+            <p>Сюда какая то хуйня уже лорем ипсум блять</p>
+          </li>
+        </ul>
+        <div class="section-tail"></div>
+
+          
+      </section>
+      <!--Языки программирования?  -->
+      <section class="gayming spage">
+        <div class="section-header">С какими языками знаком</div>
+
+        <div class="lang">
+          <div class="lang-item">
+            <img src="./src/img/python-logo-only.png" class="lang-logo"></img>
+            <div class="lang-description">
+              <h4>Python</h4>
+              <p>изучал ещё в университете лет 5 назад, изучил все базовые сущности языка, пару строчек могу накидать. Библиотек петоновских не знаю, разве что turtle и math</p>
+            </div>
+          </div>
+
+          <div class="lang-item">
+            <img src="./src/img/js_logo.png" class="lang-logo"></img>
+            <div class="lang-description">
+              <h4>Javascript</h4>
+              <p>в прошлом году познакомился с языком, помогал друзьям ради опыта командной разработки создавать сервер для GTA V</p>
+            </div>
+          </div>
+
+
+          <div class="lang-item">
+            <img src="./src/img/csharp_logo.png" class="lang-logo"></img>
+            <div class="lang-description">
+              <h4>C Sharp</h4>
+              <p>знаком, но очень поверхностно, пришлось изучить основы, чтобы работать с шейдерами в Unity, когда работал в 3d</p>
+            </div>
+          </div>
+
+          <div class="lang-item">
+            <img src="./src/img/git_logo.png" class="lang-logo"></img>
+            <div class="lang-description">
+              <h4>.git</h4>
+              <p>небольшой опыт командной разработки есть, там без git никак</p>
+            </div>
+          </div>
+      </section>
+
+      <section class="knowledge spage">
+        <div class="section-header">Что знаю о CRM и CMA? <span>(ничего)</span></div>
+
+        <h4>CRM</h4>
+        <p>CRM(от англ. CustomerRelationshipManagment — «Система управления взаимоотношениями с клиентами») - система взаимодействия с пользователем, отслеживания его действий , хранения о нём данных, анализа этих данных.
+        Всё это не всегда реальзовано в одной отдельной CRM-системе. Для разделения взаимодейсвия с клиентом, может быть реализовано несколько систем, каждая со своей функциональностью.</p>
+        <h4>CMS</h4>
+        <p>CMS(от англ. ContentManagmentService - "система управления контентом") - это система для написания сайтов. У неё есть движок для различных функций: для личных кабинетов, платежей, создания постов, комментариев и ид, а также возможность для настройки визуального отображения содержимого. Пользователь создаёт с помощью CMS свой сайт, добавляет необходимый функционал, настраивает дизайн, а дальше управляет содержимым сайта без написания строчек кода. </p>
+
+      </section>
+
       
       <div class="calc-body">
         <div class="screen">
@@ -109,10 +187,10 @@
           <div class="result" id="result"></div>
         </div>
         <div class="calculator">
-          <button class="grid-elem clear">Clear</button>
+          <button class="grid-elem clear">C</button>
           <button class="grid-elem plusminus">&#177;</button>
           <button class="grid-elem percent" >%</button>
-          <button class="grid-elem operator" id="*">*</button>
+          <button class="grid-elem operator" id="*">&#215;</button>
           <button class="grid-elem number" id="7">7</button>
           <button class="grid-elem number" id="8">8</button>
           <button class="grid-elem number" id="9">9</button>
@@ -120,7 +198,7 @@
           <button class="grid-elem number" id="4">4</button>
           <button class="grid-elem number" id="5">5</button>
           <button class="grid-elem number" id="6">6</button>
-          <button class="grid-elem operator" id="-">-</button>
+          <button class="grid-elem operator minus-btn" id="-">-</button>
           <button class="grid-elem number" id="1">1</button>
           <button class="grid-elem number" id="2">2</button>
           <button class="grid-elem number" id="3">3</button>
@@ -131,8 +209,9 @@
         </div>
       </div>
     </main>
-    <footer>
 
+    <footer >
+      <p>Связаться</p><img src="" alt=""><button>Версия для слепых</button>
     </footer>
     
     </div>
