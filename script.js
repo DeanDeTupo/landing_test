@@ -18,13 +18,16 @@ const aboutMe =document.querySelectorAll('#aboutMe')
 const menu_2 =document.querySelectorAll('#menu-item-2')
 const menu_3 =document.querySelectorAll('#menu-item-3')
 const menu_4 =document.querySelectorAll('#menu-item-4')
-const calc =document.querySelectorAll('#calc')
+const calc = document.querySelectorAll('#calc')
+const blind = document.querySelector('#blind')
 
 // скролл H1
 document.addEventListener('scroll', () => {
     let value = window.scrollY
+    // let scrl = header.style.marginTop.value
 
-    header.style.marginTop = value*1.1 + 'px'
+    header.style.marginTop = value*1.2 + 'px'
+
 })
 
 // Якоря
@@ -64,9 +67,20 @@ Array.from(calc).forEach((el) => {
 })
 
 
-// обоработчик показа меню
+// обоработчик показа меню в мобильной версии
 burger.addEventListener('click', () => {
     document.querySelector('.drop-menu').classList.toggle('close')
+    burger.classList.toggle('burg-active')
+})
+
+// адаптивность
+blind.addEventListener('click', () => {
+    document.querySelector('main').classList.toggle('braille')
+    if (blind.textContent == 'Обычная версия') {
+        blind.innerHTML = 'Версия для слепых'
+    } else {
+        blind.innerHTML = 'Обычная версия'
+    }
 })
 
 // вешаем обработчики Калькулятор
