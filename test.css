@@ -64,7 +64,7 @@ h2 {
 
     box-sizing: border-box;
     padding: 10px;
-    background-color: bisque;
+    background-color: inherit;
     transition: background-color 1s ease-out;
     border-radius: 5px;
 }
